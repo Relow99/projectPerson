@@ -13,7 +13,7 @@ public class personTest {
 
         String person = obj.hello();
 
-        assertEquals(person,"hello,my name is tshwarelo I am female who is 22 years old, I love  fashion and sports");
+        assertEquals(person,"hello,my name is tshwarelo I am female who is 22 years old, I love  fashion and sports.");
 
     }
 }

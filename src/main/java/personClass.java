@@ -13,12 +13,26 @@ public class personClass {
 
     }
 
-    public String  hello()
+    public String hello()
     {
-        return "hello,my name is "+this.name+" I am "+this.gender+" who is "+this.age+" years old, I love "+this.interest[0]+" and "+this.interest[1];
+        String message=" ";
+        String punctuation=" ";
 
+        for(int i=0;i<interest.length;i++)
+        {
+            if (i>0 && i<interest.length-1)
+            {
+                punctuation +=", ";
+            }
+            if(i==interest.length-1)
+            {
+                punctuation+=" and ";
+            }
+            punctuation+=interest[i];
+        }
+        message="hello,my name is "+this.name+ " I am "+this.gender+" who is "+this.age+" years old"+", I love";
+        return message+punctuation+".";
     }
-
 
 
 }
